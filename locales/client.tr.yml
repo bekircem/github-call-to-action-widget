@@ -1,6 +1,6 @@
 tr:
   js:
     premium_widget:
-      title: "Test"
-      subtitle: "Test"
-      cta_button: "TIKLA" 
+      title: "Etkileyici Başlığınız"
+      subtitle: "Dikkat Çekici Alt Başlığınız"
+      cta_button: "Harekete Geç" 
