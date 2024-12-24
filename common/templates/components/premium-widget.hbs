@@ -1,0 +1,19 @@
+<div class="premium-opportunities-widget">
+  <h3 class="widget-title">{{i18n "premium_widget.title"}}</h3>
+  <p class="widget-subtitle">{{i18n "premium_widget.subtitle"}}</p>
+  
+  <div class="features-list">
+    {{#each features as |feature|}}
+      <div class="feature-item">
+        {{d-icon "star"}}
+        <span>{{feature}}</span>
+      </div>
+    {{/each}}
+  </div>
+
+  {{d-button
+    class="premium-cta-button"
+    label="premium_widget.cta_button"
+    action=(action "onSubscribeClick")
+  }}
+</div> 
