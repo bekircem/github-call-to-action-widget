@@ -3,16 +3,24 @@
   "component": true,
   "authors": "Bekir Cem",
   "theme_version": "1.0",
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+  },
+  "color_schemes": {
+  },
   "settings": [
     {
-      "type": "enum",
-      "id": "widget_location",
-      "label": "Widget Location",
-      "description": "Select where you want the widget to appear",
-      "default": "after-topic-list",
-      "choices": [
-        "after-topic-list",
-        "above-main-container"
+      "type": "list",
+      "id": "feature_items",
+      "label": "Feature Items",
+      "description": "Enter each feature item on a new line",
+      "list_type": "simple",
+      "default": [
+        "Feature Item 1",
+        "Feature Item 2",
+        "Feature Item 3",
+        "Feature Item 4"
       ]
     }
   ]
