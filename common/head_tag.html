@@ -5,12 +5,18 @@
       <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
       
       <div class="features-list">
-        {{#each (split-string themeSettings.feature_items delimiter="\\n") as |feature|}}
-          <div class="feature-item">
-            {{d-icon "star"}}
-            <span>{{feature}}</span>
-          </div>
-        {{/each}}
+        <div class="feature-item">
+          {{d-icon "star"}}
+          <span>Feature 1</span>
+        </div>
+        <div class="feature-item">
+          {{d-icon "star"}}
+          <span>Feature 2</span>
+        </div>
+        <div class="feature-item">
+          {{d-icon "star"}}
+          <span>Feature 3</span>
+        </div>
       </div>
     </div>
 
