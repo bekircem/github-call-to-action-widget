@@ -1,20 +1,16 @@
 <script type="text/x-handlebars" data-template-name="/connectors/after-topic-list/cta-button">
-  {{#if (component-lookup "cta-widget")}}
-    <CtaWidget @tagName="after-topic-list">
-      <div class="premium-opportunities-widget">
-        <div class="content-wrapper">
-          <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
-          <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
-        </div>
+  <div class="premium-opportunities-widget">
+    <div class="content-wrapper">
+      <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
+      <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
+    </div>
 
-        <div class="button-wrapper">
-          <button class="premium-cta-button">
-            {{theme-i18n "premium_widget.cta_button"}}
-          </button>
-        </div>
-      </div>
-    </CtaWidget>
-  {{/if}}
+    <div class="button-wrapper">
+      <button class="premium-cta-button">
+        {{theme-i18n "premium_widget.cta_button"}}
+      </button>
+    </div>
+  </div>
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/above-main-container/cta-button">
