@@ -11,16 +11,14 @@
   },
   "settings": [
     {
-      "type": "list",
-      "id": "feature_items",
-      "label": "Feature Items",
-      "description": "Enter each feature item on a new line",
-      "list_type": "simple",
-      "default": [
-        "Feature Item 1",
-        "Feature Item 2",
-        "Feature Item 3",
-        "Feature Item 4"
+      "type": "enum",
+      "id": "widget_location",
+      "label": "Widget Location",
+      "description": "Select where you want the widget to appear",
+      "default": "after_topic_list",
+      "choices": [
+        "after_topic_list",
+        "before_topic_list"
       ]
     }
   ]
