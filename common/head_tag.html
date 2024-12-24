@@ -4,28 +4,16 @@
     <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
     
     <div class="features-list">
-      <div class="feature-item">
-        {{d-icon "star"}}
-        <span>Exclusive Deal Access</span>
-      </div>
-      <div class="feature-item">
-        {{d-icon "star"}}
-        <span>In-Depth Market Analysis</span>
-      </div>
-      <div class="feature-item">
-        {{d-icon "star"}}
-        <span>Expert Webinars</span>
-      </div>
-      <div class="feature-item">
-        {{d-icon "star"}}
-        <span>Personal Impact Dashboard</span>
-      </div>
+      {{#each (split-string themeSettings.feature_items delimiter="\\n") as |feature|}}
+        <div class="feature-item">
+          {{d-icon "star"}}
+          <span>{{feature}}</span>
+        </div>
+      {{/each}}
     </div>
 
-    {{d-button
-      class="premium-cta-button"
-      label=(theme-i18n "premium_widget.cta_button")
-      action=(action "onSubscribeClick")
-    }}
+    <button class="premium-cta-button">
+      {{theme-i18n "premium_widget.cta_button"}}
+    </button>
   </div>
 </script>

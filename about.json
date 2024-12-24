@@ -10,5 +10,14 @@
   "assets": {
   },
   "color_schemes": {
-  }
+  },
+  "settings": [
+    {
+      "type": "list",
+      "id": "feature_items",
+      "label": "Feature Items",
+      "description": "Enter each feature item on a new line",
+      "default": "Exclusive Deal Access\nIn-Depth Market Analysis\nExpert Webinars\nPersonal Impact Dashboard"
+    }
+  ]
 }
