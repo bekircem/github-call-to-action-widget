@@ -24,6 +24,17 @@
         "Feature Item 3",
         "Feature Item 4"
       ]
+    },
+    {
+      "type": "enum",
+      "id": "widget_location",
+      "label": "Widget Location",
+      "description": "Select where you want the widget to appear",
+      "default": "after-topic-list",
+      "choices": [
+        "after-topic-list",
+        "above-main-container"
+      ]
     }
   ]
 }
