@@ -1,5 +1,5 @@
 <script type="text/x-handlebars" data-template-name="/connectors/after-topic-list/cta-button">
-  {{#if (theme-setting "widget_location" "after-topic-list")}}
+  {{#if showWidget}}
     <div class="premium-opportunities-widget">
       <div class="content-wrapper">
         <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
@@ -16,7 +16,7 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/above-main-container/cta-button">
-  {{#if (theme-setting "widget_location" "above-main-container")}}
+  {{#if showWidget}}
     <div class="premium-opportunities-widget">
       <div class="content-wrapper">
         <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
