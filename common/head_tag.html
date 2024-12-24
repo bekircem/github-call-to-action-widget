@@ -1,33 +1,37 @@
 <script type="text/x-handlebars" data-template-name="/connectors/after-topic-list/cta-button">
-  {{#if showWidget}}
-    <div class="premium-opportunities-widget">
-      <div class="content-wrapper">
-        <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
-        <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
-      </div>
+  {{#if (component-lookup "cta-widget")}}
+    <CtaWidget @tagName="after-topic-list">
+      <div class="premium-opportunities-widget">
+        <div class="content-wrapper">
+          <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
+          <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
+        </div>
 
-      <div class="button-wrapper">
-        <button class="premium-cta-button">
-          {{theme-i18n "premium_widget.cta_button"}}
-        </button>
+        <div class="button-wrapper">
+          <button class="premium-cta-button">
+            {{theme-i18n "premium_widget.cta_button"}}
+          </button>
+        </div>
       </div>
-    </div>
+    </CtaWidget>
   {{/if}}
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/above-main-container/cta-button">
-  {{#if showWidget}}
-    <div class="premium-opportunities-widget">
-      <div class="content-wrapper">
-        <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
-        <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
-      </div>
+  {{#if (component-lookup "cta-widget")}}
+    <CtaWidget @tagName="above-main-container">
+      <div class="premium-opportunities-widget">
+        <div class="content-wrapper">
+          <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
+          <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
+        </div>
 
-      <div class="button-wrapper">
-        <button class="premium-cta-button">
-          {{theme-i18n "premium_widget.cta_button"}}
-        </button>
+        <div class="button-wrapper">
+          <button class="premium-cta-button">
+            {{theme-i18n "premium_widget.cta_button"}}
+          </button>
+        </div>
       </div>
-    </div>
+    </CtaWidget>
   {{/if}}
 </script>
