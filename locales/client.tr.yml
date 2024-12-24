@@ -1,7 +1,0 @@
-tr:
-  theme_translations:
-    3:
-      premium_widget:
-        title: "Etkileyici Başlığınız"
-        subtitle: "Dikkat Çekici Alt Başlığınız"
-        cta_button: "Harekete Geç" 
