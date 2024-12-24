@@ -1,7 +1,9 @@
 {
-  "name": "Discourse Call to Action Widget",
+  "name": "Premium Opportunities Widget",
   "component": true,
   "authors": "Bekir Cem",
+  "about_url": null,
+  "license_url": null,
   "theme_version": "1.0",
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
@@ -11,15 +13,11 @@
   },
   "settings": [
     {
-      "type": "enum",
-      "id": "widget_location",
-      "label": "Widget Location",
-      "description": "Select where you want the widget to appear",
-      "default": "after_topic_list",
-      "choices": [
-        "after_topic_list",
-        "before_topic_list"
-      ]
+      "type": "list",
+      "id": "feature_items",
+      "label": "Feature Items",
+      "description": "Enter each feature item on a new line",
+      "default": "Exclusive Deal Access\nIn-Depth Market Analysis\nExpert Webinars\nPersonal Impact Dashboard"
     }
   ]
 }
