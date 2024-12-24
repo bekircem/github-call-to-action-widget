@@ -1,17 +1,14 @@
 {
-  "name": "custom",
+  "name": "Premium Opportunities Widget",
   "component": true,
-  "license_url": null,
+  "authors": "Bekir Cem",
   "about_url": null,
-  "authors": null,
-  "theme_version": null,
+  "license_url": null,
+  "theme_version": "1.0",
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
   },
   "color_schemes": {
-  },
-  "modifiers": {
-  },
-  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+  }
 }
