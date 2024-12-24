@@ -1,59 +1,31 @@
-<script type="text/discourse-plugin">
-  const { createWidget } = require("discourse/widgets/widget");
-  const h = require("virtual-dom").h;
-
-  createWidget('premium-opportunities-widget', {
-    tagName: 'div.premium-opportunities-widget',
+<script type="text/x-handlebars" data-template-name="/connectors/after-topic-list/cta-button">
+  <div class="premium-opportunities-widget">
+    <h3 class="widget-title">{{i18n "premium_widget.title"}}</h3>
+    <p class="widget-subtitle">{{i18n "premium_widget.subtitle"}}</p>
     
-    buildKey: () => 'premium-opportunities-widget',
+    <div class="features-list">
+      <div class="feature-item">
+        {{d-icon "star"}}
+        <span>Exclusive Deal Access</span>
+      </div>
+      <div class="feature-item">
+        {{d-icon "star"}}
+        <span>In-Depth Market Analysis</span>
+      </div>
+      <div class="feature-item">
+        {{d-icon "star"}}
+        <span>Expert Webinars</span>
+      </div>
+      <div class="feature-item">
+        {{d-icon "star"}}
+        <span>Personal Impact Dashboard</span>
+      </div>
+    </div>
 
-    defaultState() {
-      return {
-        features: [
-          "Exclusive Deal Access",
-          "In-Depth Market Analysis",
-          "Expert Webinars",
-          "Personal Impact Dashboard"
-        ]
-      };
-    },
-
-    html(attrs, state) {
-      return [
-        h('h3.widget-title', I18n.t('premium_widget.title')),
-        h('p.widget-subtitle', I18n.t('premium_widget.subtitle')),
-        this.buildFeaturesList(state.features),
-        this.buildCTAButton()
-      ];
-    },
-
-    buildFeaturesList(features) {
-      return h('div.features-list',
-        features.map(feature => 
-          h('div.feature-item', [
-            h('span.d-icon.d-icon-star'),
-            h('span', feature)
-          ])
-        )
-      );
-    },
-
-    buildCTAButton() {
-      return h('button.premium-cta-button', I18n.t('premium_widget.cta_button'));
-    }
-  });
-
-  api.createWidget('premium-opportunities-connector', {
-    tagName: 'div.premium-opportunities-connector',
-    
-    html() {
-      return this.attach('premium-opportunities-widget');
-    }
-  });
-
-  api.registerConnectorClass('discovery-list-container-top', 'premium-opportunities', {
-    setupComponent() {
-      // Component kurulum mantığı buraya
-    }
-  });
+    {{d-button
+      class="premium-cta-button"
+      label="Subscribe Now"
+      action=(action "onSubscribeClick")
+    }}
+  </div>
 </script>
