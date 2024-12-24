@@ -1,9 +1,5 @@
 tr_TR:
   premium_widget:
     title: "Etkileyici Başlığınız"
-    subtitle: "Ana açıklama metni buraya
-Özellik maddesi 1
-Özellik maddesi 2
-Özellik maddesi 3
-Özellik maddesi 4"
+    subtitle: "Dikkat Çekici Alt Başlığınız"
     cta_button: "Harekete Geç" 

@@ -1,9 +1,5 @@
 en:
   premium_widget:
     title: "Your Amazing Title Here"
-    subtitle: "Main description here
-Feature item 1
-Feature item 2
-Feature item 3
-Feature item 4"
+    subtitle: "Write an engaging subtitle to capture attention"
     cta_button: "Click to Action"
