@@ -19,3 +19,54 @@
     padding: 15px 30px;
     transition: background-color 0.3s ease; /* Hover efektine geçiş */
 }
+
+.premium-opportunities-widget {
+  background: var(--primary-very-low);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  
+  .widget-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .widget-subtitle {
+    color: var(--primary-medium);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .features-list {
+    margin: 1rem 0;
+    
+    .feature-item {
+      color: var(--primary-high);
+      padding: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      
+      .d-icon {
+        color: var(--tertiary);
+      }
+    }
+  }
+}
+
+.premium-cta-button {
+  background: var(--tertiary);
+  color: var(--secondary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: var(--tertiary-hover);
+    color: var(--secondary);
+  }
+}
