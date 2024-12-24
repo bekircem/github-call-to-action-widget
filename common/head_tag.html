@@ -4,7 +4,7 @@
     <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
     
     <div class="features-list">
-      {{#each (split-string themeSettings.feature_items delimiter="\\n") as |feature|}}
+      {{#each (theme-setting "feature_items") as |feature|}}
         <div class="feature-item">
           {{d-icon "star"}}
           <span>{{feature}}</span>

@@ -17,7 +17,13 @@
       "id": "feature_items",
       "label": "Feature Items",
       "description": "Enter each feature item on a new line",
-      "default": "Exclusive Deal Access\nIn-Depth Market Analysis\nExpert Webinars\nPersonal Impact Dashboard"
+      "list_type": "simple",
+      "default": [
+        "Exclusive Deal Access",
+        "In-Depth Market Analysis",
+        "Expert Webinars",
+        "Personal Impact Dashboard"
+      ]
     }
   ]
 }
