@@ -1,0 +1,21 @@
+/* CTA BANNER */
+.cta_banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #DDDEDA;
+  border-radius: 10px; 
+  max-width: 100%; 
+  margin: auto; 
+}
+
+.cta_banner_description {
+    max-width: 60%; 
+}
+
+.btn-upgrade {
+    font-size: var(--font-up-2);
+    padding: 15px 30px;
+    transition: background-color 0.3s ease; /* Hover efektine geçiş */
+}
