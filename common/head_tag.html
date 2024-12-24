@@ -1,19 +1,23 @@
 <script type="text/x-handlebars" data-template-name="/connectors/after-topic-list/cta-button">
   <div class="premium-opportunities-widget">
-    <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
-    <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
-    
-    <div class="features-list">
-      {{#each (theme-setting "feature_items") as |feature|}}
-        <div class="feature-item">
-          {{d-icon "star"}}
-          <span>{{feature}}</span>
-        </div>
-      {{/each}}
+    <div class="content-wrapper">
+      <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
+      <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
+      
+      <div class="features-list">
+        {{#each (split-string themeSettings.feature_items delimiter="\\n") as |feature|}}
+          <div class="feature-item">
+            {{d-icon "star"}}
+            <span>{{feature}}</span>
+          </div>
+        {{/each}}
+      </div>
     </div>
 
-    <button class="premium-cta-button">
-      {{theme-i18n "premium_widget.cta_button"}}
-    </button>
+    <div class="button-wrapper">
+      <button class="premium-cta-button">
+        {{theme-i18n "premium_widget.cta_button"}}
+      </button>
+    </div>
   </div>
 </script>
