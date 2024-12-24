@@ -1,7 +1,7 @@
 <script type="text/x-handlebars" data-template-name="/connectors/after-topic-list/cta-button">
   <div class="premium-opportunities-widget">
-    <h3 class="widget-title">{{i18n "premium_widget.title"}}</h3>
-    <p class="widget-subtitle">{{i18n "premium_widget.subtitle"}}</p>
+    <h3 class="widget-title">{{theme-i18n "premium_widget.title"}}</h3>
+    <p class="widget-subtitle">{{theme-i18n "premium_widget.subtitle"}}</p>
     
     <div class="features-list">
       <div class="feature-item">
@@ -24,7 +24,7 @@
 
     {{d-button
       class="premium-cta-button"
-      label="Subscribe Now"
+      label=(theme-i18n "premium_widget.cta_button")
       action=(action "onSubscribeClick")
     }}
   </div>
